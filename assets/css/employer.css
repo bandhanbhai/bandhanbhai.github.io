@@ -1,0 +1,73 @@
+@font-face{
+	font-family: "lato-light";
+	src:url(../fonts/Lato-Light.ttf);
+}
+@font-face{
+	font-family: "lato-regular";
+	src:url(../fonts/Lato-Regular.ttf);
+}
+
+.btn.btn-primary.btn-postjob{
+	    background-color: #1A691C !important ;
+    border-color: #1A691C;
+}
+
+.lighter.smaller.company_title{
+	font-family: lato-regular;
+	letter-spacing: 1px;
+	margin-top: 0px;
+}
+.lighter.smaller.compnay_titletext{
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	margin-top: 0px;
+}
+.btn.btn-sm.btn_view{
+	background-color: #2e7d32 !important;
+	border-color: #2e7d32; 
+}
+.btn{
+	border-radius: 3px !important;
+}
+.widget-main.company_profile{
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
+.profile-info-name {
+    width: 170px ;
+}
+.upload_file{
+	padding-left: 0px;
+}
+
+/*post job css file*/
+@media screen and (min-width: 769px) {
+	.step_hiringlabel{
+		padding-left: 0px !important;
+		text-align: left !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.col-sm-9.step_col{
+		padding-left: 0px;
+
+	}
+	
+}
+.col-md-3.padding_bottomstep{
+	padding-bottom: 10px;
+}
+
+
+/*job list css*/
+.row.text-center.addnew{
+	padding-top: 15px;
+}
+
+@media screen and (max-width: 767px) {
+	
+	.btn.btn-primary.margin{
+	margin-bottom: 10px;
+}
+}
