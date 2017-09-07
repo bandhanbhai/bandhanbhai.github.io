@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>Shortlisted Enterview</title>
+		<title>Upcoming Enterview</title>
 
 		<meta name="description" content="overview &amp; stats" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -291,7 +291,7 @@
 				try{ace.settings.loadState('main-container')}catch(e){}
 			</script>
 
-			<div id="sidebar" class="sidebar                  responsive                    ace-save-state">
+			<div id="sidebar" class="sidebar responsive ace-save-state">
 				<script type="text/javascript">
 					try{ace.settings.loadState('sidebar')}catch(e){}
 				</script>
@@ -311,7 +311,7 @@
 
 				<ul class="nav nav-list">
 					<li class="">
-						<a href="visitordashboard.html">
+						<a href="interndashboard.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
 						</a>
@@ -320,7 +320,7 @@
 					</li>
 
 					<li class="">
-						<a href="visiterprofile.html">
+						<a href="internprofile.html">
 							<i class="menu-icon fa fa-list-alt"></i>
 							<span class="menu-text">
 							 User Profile 
@@ -330,7 +330,7 @@
                      </li>
 
 					<li class="">
-						<a href="searchjobs.html">
+						<a href="insearchjobs.html">
 							<i class="menu-icon fa fa-list-alt"></i>
 							<span class="menu-text">Search Job</span>
 					    </a>
@@ -340,7 +340,7 @@
 					
 
 					<li class="">
-						<a href="dropzone.html">
+						<a href="indocupload.html">
 							<i class="menu-icon fa fa-list-alt"></i>
 							<span class="menu-text"> Document Upload </span>
 						</a>
@@ -349,7 +349,7 @@
 					</li>
 
 					<li class="">
-						<a href="vupcominginterview.html">
+						<a href="inupcominginterview.html">
 							<i class="menu-icon fa fa-list-alt"></i>
 
 							<span class="menu-text">
@@ -361,8 +361,8 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="active">
-						<a href="shortlistinterview.html">
+					<li class="">
+						<a href="internshortlistedinterview.html">
 							<i class="menu-icon fa fa-list-alt"></i>
 							<span class="menu-text"> Shortlisted Interview </span>
 						</a>
@@ -371,7 +371,7 @@
 					</li>
 
 				 <li class="">
-						<a href="savedjob.html">
+						<a href="internsavedjobs.html">
 							<i class="menu-icon fa fa-list-alt"></i>
 							<span class="menu-text"> Saved Jobs </span>
                        </a>
@@ -380,7 +380,7 @@
 				 
 
 					<li class="">
-						<a href="vfaq.html">
+						<a href="internfaq.html">
 							<i class="menu-icon fa fa-list-alt"></i>
 
 							<span class="menu-text">
@@ -391,8 +391,8 @@
                            <b class="arrow"></b>
                        </li>
 					   
-					   <li class="">
-						<a href="vresult.html">
+					   <li class="active">
+						<a href="internresult.html">
 							<i class="menu-icon fa fa-list-alt"></i>
 
 							<span class="menu-text">
@@ -494,7 +494,7 @@
 
 						<div class="page-header">
 							<h1>
-								Shortlisted Enterview
+								Result
 								
 							</h1>
 						</div><!-- /.page-header -->
@@ -509,13 +509,12 @@
 										<table class="table table-bordered table-hover">
 											<thead>
 												<tr>
-												    <th class="center">No</th>
-													<th class="center">Job Id</th>
+													<th class="center">No</th>
 													<th class="center">Interview Details</th>
-													<th class="center">Last Atend Date</th>
-													<th class="center">Rounded Attended</th>
-													<th class="center">Round Remain</th>
-													<th class="center">Next Round Date</th>
+													<th class="center">Company Name</th>
+													<th class="center">Designation</th>
+													<th class="center">Result</th>
+													<th class="center">Feedback</th>
 													<th class="center">Selection</th>
 
 												</tr>
@@ -523,8 +522,7 @@
 
 											<tbody>
 												<tr>
-												     <td class="center">1</td>
-													<td class="center">SBI 1</td>
+													<td class="center">1</td>
 													<td class="center">
 														<div class="action-buttons">
 															<a href="#" class="green bigger-140 show-details-btn" title="Show Details">
@@ -534,17 +532,16 @@
 														</div>
 													</td>
 
-													<td class="center">22/08/17</td>
-													<td class="center">3</td>
+													<td class="center">Tabashi Technology Private Limited</td>
+													<td class="center">UI Developer</td>
 													
-													<td class="center">2</td>
-													<td class="center">Monday ,2 P.M,22/08/17</td>
+													<td class="center">Pass</td>
 
 													
 													<td class="center">
 														<div class="hidden-sm hidden-xs btn-group">
 															<button class="btn btn-xs btn-success">
-																Accept
+															View
 															</button>
 
 															<button class="btn btn-xs btn-danger">
@@ -560,7 +557,47 @@
 																</button>
 
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-															
+																	
+																	<li>
+																		<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
+																			<span class="green">
+																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+
+																	<li>
+																		<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
+																			<span class="red">
+																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</td>
+													
+													<td class="center">
+														<div class="hidden-sm hidden-xs btn-group">
+															<button class="btn btn-xs btn-success">
+																View
+															</button>
+
+															<button class="btn btn-xs btn-danger">
+																Download
+															</button>
+
+														</div>
+
+														<div class="hidden-md hidden-lg">
+															<div class="inline pos-rel">
+																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+																	<i class="ace-icon fa fa-cog icon-only bigger-110"></i>
+																</button>
+
+																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+																	
 																	<li>
 																		<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
 																			<span class="green">
@@ -701,9 +738,7 @@
 				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
 			</a>
 		</div><!-- /.main-container -->
-
-		<!-- basic scripts -->
-
+  
 		<!--[if !IE]> -->
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
 
