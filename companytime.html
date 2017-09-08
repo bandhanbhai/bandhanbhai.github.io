@@ -17,7 +17,13 @@
 
 		<!-- text fonts -->
 		<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
-
+		<link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
+		<link rel="stylesheet" href="assets/css/chosen.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-datepicker3.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-timepicker.min.css" />
+		<link rel="stylesheet" href="assets/css/daterangepicker.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-colorpicker.min.css" />
 		<!-- ace styles -->
 		<link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
 
@@ -552,21 +558,15 @@
 							
 						</ul><!-- /.breadcrumb -->
 						<div class="nav-search">
-							<form class="form-search">
-								<span class="input-icon">
-									<input placeholder="End Date" class="nav-search-input" autocomplete="off" type="text">
-									<i class="ace-icon fa fa-search nav-search-icon"></i>
+
+							<div class="input-group">
+								<span class="input-group-addon">
+									<i class="fa fa-calendar bigger-110"></i>
 								</span>
-							</form>
+								<input class="form-control" type="text" name="date-range-picker" id="id-date-range-picker-1" placeholder="Date" />
+							</div>
 						</div>
-						<div class="nav-searchone">
-							<form class="form-search">
-								<span class="input-icon">
-									<input placeholder="Start date" class="nav-search-input" autocomplete="off" type="text">
-									<i class="ace-icon fa fa-search nav-search-icon"></i>
-								</span>
-							</form>
-						</div>
+						
 
 						
 					</div>
@@ -1002,7 +1002,21 @@
 		<script src="assets/js/buttons.print.min.js"></script>
 		<script src="assets/js/buttons.colVis.min.js"></script>
 		<script src="assets/js/dataTables.select.min.js"></script>
-		
+		<script src="assets/js/bootstrap-tag.min.js"></script>
+		<script src="assets/js/jquery.maskedinput.min.js"></script>
+		<script src="assets/js/jquery.inputlimiter.min.js"></script>
+		<script src="assets/js/jquery-ui.custom.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/chosen.jquery.min.js"></script>
+		<script src="assets/js/spinbox.min.js"></script>
+		<script src="assets/js/bootstrap-datepicker.min.js"></script>
+		<script src="assets/js/bootstrap-timepicker.min.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/daterangepicker.min.js"></script>
+		<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+		<script src="assets/js/bootstrap-colorpicker.min.js"></script>
+		<script src="assets/js/jquery.knob.min.js"></script>
+		<script src="assets/js/autosize.min.js"></script>
 
 		<!-- ace scripts -->
 		<script src="assets/js/ace-elements.min.js"></script>
@@ -1058,6 +1072,20 @@
 				});
 				/***************/
 		
+		</script>
+
+		<script type="text/javascript">
+			$('input[name=date-range-picker]').daterangepicker({
+					'applyClass' : 'btn-sm btn-success',
+					'cancelClass' : 'btn-sm btn-default',
+					locale: {
+						applyLabel: 'Apply',
+						cancelLabel: 'Cancel',
+					}
+				})
+				.prev().on(ace.click_event, function(){
+					$(this).next().focus();
+				});
 		</script>
 	</body>
 </html>
