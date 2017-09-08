@@ -4588,11 +4588,7 @@ body.mob-safari .sidebar.sidebar-fixed {
     line-height: 24px;
 	z-index:999;
 }
-.nav-searchone {
-    position: absolute;
-    right:185px;
-    line-height: 24px
-}
+
 .breadcrumbs .nav-search {
     top: 6px
 }
@@ -4804,6 +4800,11 @@ body.mob-safari .sidebar.sidebar-fixed {
     }
 }
 
+.nav-searchone {
+    position: absolute;
+    right:185px;
+    line-height: 24px
+}
 .breadcrumbs .nav-searchone {
     top: 6px
 }
@@ -5009,6 +5010,440 @@ body.mob-safari .sidebar.sidebar-fixed {
     .nav-searchone .nav-search-input:focus~.nav-search-icon,
     .nav-searchone .nav-search-input:hover~.nav-search-icon,
     .nav-searchone:hover .nav-search-icon {
+        border: none;
+        border-radius: 0;
+        padding: 0 3px!important
+    }
+}
+
+.nav-searchtwo {
+    position: absolute;
+    right:347px;
+    line-height: 24px;
+	z-index:999;
+}
+.breadcrumbs .nav-searchtwo {
+    top: 6px
+}
+.nav-searchtwo .form-search {
+    margin-bottom: 0
+}
+.nav-searchtwo .nav-search-input {
+    border: 1px solid #6FB3E0;
+    width: 152px;
+    height: 28px!important;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 4px!important;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #666!important;
+    z-index: 11;
+    -webkit-transition: width ease .15s;
+    -o-transition: width ease .15s;
+    transition: width ease .15s
+}
+.nav-searchtwo .nav-search-input+.dropdown-menu {
+    min-width: 0;
+    left: 0;
+    right: 0
+}
+.nav-searchtwo .nav-search-input:focus,
+.nav-searchtwo .nav-search-input:hover {
+    border-color: #6FB3E0
+}
+.nav-searchtwo .nav-search-icon {
+    color: #6FB3E0!important;
+    font-size: 14px!important;
+    line-height: 24px!important;
+    background-color: transparent
+}
+.nav-searchtwo.minimized .nav-search-input {
+    width: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    max-width: 0
+}
+.nav-searchtwo.minimized .nav-search-btn:active+.nav-search-input,
+.nav-searchtwo.minimized .nav-search-input:active,
+.nav-searchtwo.minimized .nav-search-input:focus,
+.nav-searchtwo.minimized .nav-search-input:hover,
+.nav-searchtwo.minimized:hover .nav-search-input {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    width: 152px;
+    max-width: 152px
+}
+.nav-searchtwo.minimized .nav-search-icon {
+    border: 1px solid;
+    border-radius: 100%;
+    background-color: #FFF;
+    padding: 0 5px!important
+}
+.nav-search-icon,
+.nav-searchtwo.minimized .nav-search-input:active~.nav-search-icon,
+.nav-searchtwo.minimized .nav-search-input:focus~.nav-search-icon,
+.nav-searchtwo.minimized .nav-search-input:hover~.nav-search-icon,
+.nav-searchtwo.minimized:hover .nav-search-icon {
+    border: none;
+    border-radius: 0;
+    padding: 0 3px!important
+}
+.sidebar>.nav-searchtwo {
+    position: static;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #DDD;
+    text-align: center;
+    height: 35px;
+    padding-top: 6px
+}
+.sidebar>.nav-searchtwo .nav-search-input {
+    width: 162px!important;
+    border-radius: 0!important;
+    max-width: 162px!important;
+    opacity: 1!important;
+    filter: alpha(opacity=100)!important
+}
+.sidebar>.nav-searchtwo .nav-search-input+.dropdown-menu {
+    text-align: left
+}
+.sidebar.menu-min .nav-searchtwo .form-search {
+    position: absolute;
+    left: 5px;
+    z-index: 14
+}
+.sidebar.menu-min .nav-searchtwo .nav-search-input {
+    width: 0!important;
+    max-width: 0!important;
+    opacity: 0!important;
+    filter: alpha(opacity=0)!important
+}
+.sidebar.menu-min .nav-searchtwo .nav-search-input:active,
+.sidebar.menu-min .nav-searchtwo .nav-search-input:focus,
+.sidebar.menu-min .nav-searchtwo .nav-search-input:hover,
+.sidebar.menu-min .nav-searchtwo:hover .nav-search-input {
+    width: 162px!important;
+    max-width: 162px!important;
+    opacity: 1!important;
+    filter: alpha(opacity=100)!important
+}
+.sidebar.menu-min .nav-searchtwo .nav-search-input:active~#nav-search-icon,
+.sidebar.menu-min .nav-searchtwo .nav-search-input:focus~#nav-search-icon,
+.sidebar.menu-min .nav-searchtwo .nav-search-input:hover~#nav-search-icon {
+    border: none;
+    border-radius: 0;
+    padding: 0 3px!important
+}
+.sidebar.menu-min .nav-searchtwo:hover .nav-search-input~.nav-search-icon {
+    border: none;
+    border-radius: 0;
+    padding: 0 3px!important
+}
+.sidebar.menu-min .nav-searchtwo .nav-search-icon {
+    border: 1px solid;
+    border-radius: 32px;
+    background-color: #FFF;
+    padding: 0 5px!important
+}
+@media (max-width: 991px) {
+    .sidebar.responsive-min .nav-searchtwo .form-search {
+        position: absolute;
+        left: 5px;
+        z-index: 14
+    }
+    .sidebar.responsive-min .nav-searchtwo .nav-search-input {
+        width: 0!important;
+        max-width: 0!important;
+        opacity: 0!important;
+        filter: alpha(opacity=0)!important
+    }
+    .sidebar.responsive-min .nav-searchtwo .nav-search-input:active,
+    .sidebar.responsive-min .nav-searchtwo .nav-search-input:focus,
+    .sidebar.responsive-min .nav-searchtwo .nav-search-input:hover,
+    .sidebar.responsive-min .nav-searchtwo:hover .nav-search-input {
+        width: 162px!important;
+        max-width: 162px!important;
+        opacity: 1!important;
+        filter: alpha(opacity=100)!important
+    }
+    .sidebar.responsive-min .nav-searchtwo .nav-search-input:active~#nav-search-icon,
+    .sidebar.responsive-min .nav-searchtwo .nav-search-input:focus~#nav-search-icon,
+    .sidebar.responsive-min .nav-searchtwo .nav-search-input:hover~#nav-search-icon {
+        border: none;
+        border-radius: 0;
+        padding: 0 3px!important
+    }
+    .sidebar.responsive-min .nav-searchtwo:hover .nav-search-input~.nav-search-icon {
+        border: none;
+        border-radius: 0;
+        padding: 0 3px!important
+    }
+    .sidebar.responsive-min .nav-searchtwo .nav-search-icon {
+        border: 1px solid;
+        border-radius: 32px;
+        background-color: #FFF;
+        padding: 0 5px!important
+    }
+}
+@media only screen and (max-width: 991px) {
+    .nav-searchtwo {
+        right:86px
+    }
+    .nav-searchtwo .nav-search-input {
+        width: 105px
+    }
+    .nav-searchtwo .nav-search-btn:active+.nav-search-input,
+    .nav-searchtwo .nav-search-input:active,
+    .nav-searchtwo .nav-search-input:focus,
+    .nav-searchtwo .nav-search-input:hover,
+    .nav-searchtwo:hover .nav-search-input {
+        width: 145px
+    }
+}
+@media only screen and (max-width: 767px) {
+    .nav-searchtwo .nav-search-input {
+        width: 0;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        max-width: 0
+    }
+    .nav-searchtwo .nav-search-btn:active+.nav-search-input,
+    .nav-searchtwo .nav-search-input:active,
+    .nav-searchtwo .nav-search-input:focus,
+    .nav-searchtwo .nav-search-input:hover,
+    .nav-searchtwo:hover .nav-search-input {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        width: 152px;
+        max-width: 152px
+    }
+    .nav-searchtwo .nav-search-icon {
+        border: 1px solid;
+        border-radius: 100%;
+        background-color: #FFF;
+        padding: 0 5px!important
+    }
+    .nav-searchtwo .nav-search-input:active~.nav-search-icon,
+    .nav-searchtwo .nav-search-input:focus~.nav-search-icon,
+    .nav-searchtwo .nav-search-input:hover~.nav-search-icon,
+    .nav-searchtwo:hover .nav-search-icon {
+        border: none;
+        border-radius: 0;
+        padding: 0 3px!important
+    }
+}
+
+.nav-searchthree {
+    position: absolute;
+    right:510px;
+    line-height: 24px;
+	
+}
+.breadcrumbs .nav-searchthree {
+    top: 6px
+}
+.nav-searchthree .form-search {
+    margin-bottom: 0
+}
+.nav-searchthree .nav-search-input {
+    border: 1px solid #6FB3E0;
+    width: 152px;
+    height: 28px!important;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 4px!important;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #666!important;
+    z-index: 11;
+    -webkit-transition: width ease .15s;
+    -o-transition: width ease .15s;
+    transition: width ease .15s
+}
+.nav-searchthree .nav-search-input+.dropdown-menu {
+    min-width: 0;
+    left: 0;
+    right: 0
+}
+.nav-searchthree .nav-search-input:focus,
+.nav-searchthree .nav-search-input:hover {
+    border-color: #6FB3E0
+}
+.nav-searchthree .nav-search-icon {
+    color: #6FB3E0!important;
+    font-size: 14px!important;
+    line-height: 24px!important;
+    background-color: transparent
+}
+.nav-searchthree.minimized .nav-search-input {
+    width: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    max-width: 0
+}
+.nav-searchthree.minimized .nav-search-btn:active+.nav-search-input,
+.nav-searchthree.minimized .nav-search-input:active,
+.nav-searchthree.minimized .nav-search-input:focus,
+.nav-searchthree.minimized .nav-search-input:hover,
+.nav-searchthree.minimized:hover .nav-search-input {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    width: 152px;
+    max-width: 152px
+}
+.nav-searchthree.minimized .nav-search-icon {
+    border: 1px solid;
+    border-radius: 100%;
+    background-color: #FFF;
+    padding: 0 5px!important
+}
+.nav-search-icon,
+.nav-searchthree.minimized .nav-search-input:active~.nav-search-icon,
+.nav-searchthree.minimized .nav-search-input:focus~.nav-search-icon,
+.nav-searchthree.minimized .nav-search-input:hover~.nav-search-icon,
+.nav-searchthree.minimized:hover .nav-search-icon {
+    border: none;
+    border-radius: 0;
+    padding: 0 3px!important
+}
+.sidebar>.nav-searchthree {
+    position: static;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #DDD;
+    text-align: center;
+    height: 35px;
+    padding-top: 6px
+}
+.sidebar>.nav-searchthree .nav-search-input {
+    width: 162px!important;
+    border-radius: 0!important;
+    max-width: 162px!important;
+    opacity: 1!important;
+    filter: alpha(opacity=100)!important
+}
+.sidebar>.nav-searchthree .nav-search-input+.dropdown-menu {
+    text-align: left
+}
+.sidebar.menu-min .nav-searchthree .form-search {
+    position: absolute;
+    left: 5px;
+    z-index: 14
+}
+.sidebar.menu-min .nav-searchthree .nav-search-input {
+    width: 0!important;
+    max-width: 0!important;
+    opacity: 0!important;
+    filter: alpha(opacity=0)!important
+}
+.sidebar.menu-min .nav-searchthree .nav-search-input:active,
+.sidebar.menu-min .nav-searchthree .nav-search-input:focus,
+.sidebar.menu-min .nav-searchthree .nav-search-input:hover,
+.sidebar.menu-min .nav-searchthree:hover .nav-search-input {
+    width: 162px!important;
+    max-width: 162px!important;
+    opacity: 1!important;
+    filter: alpha(opacity=100)!important
+}
+.sidebar.menu-min .nav-searchthree .nav-search-input:active~#nav-search-icon,
+.sidebar.menu-min .nav-searchthree .nav-search-input:focus~#nav-search-icon,
+.sidebar.menu-min .nav-searchthree .nav-search-input:hover~#nav-search-icon {
+    border: none;
+    border-radius: 0;
+    padding: 0 3px!important
+}
+.sidebar.menu-min .nav-searchthree:hover .nav-search-input~.nav-search-icon {
+    border: none;
+    border-radius: 0;
+    padding: 0 3px!important
+}
+.sidebar.menu-min .nav-searchthree .nav-search-icon {
+    border: 1px solid;
+    border-radius: 32px;
+    background-color: #FFF;
+    padding: 0 5px!important
+}
+@media (max-width: 991px) {
+    .sidebar.responsive-min .nav-searchthree .form-search {
+        position: absolute;
+        left: 5px;
+        z-index: 14
+    }
+    .sidebar.responsive-min .nav-searchthree .nav-search-input {
+        width: 0!important;
+        max-width: 0!important;
+        opacity: 0!important;
+        filter: alpha(opacity=0)!important
+    }
+    .sidebar.responsive-min .nav-searchthree .nav-search-input:active,
+    .sidebar.responsive-min .nav-searchthree .nav-search-input:focus,
+    .sidebar.responsive-min .nav-searchthree .nav-search-input:hover,
+    .sidebar.responsive-min .nav-searchthree:hover .nav-search-input {
+        width: 162px!important;
+        max-width: 162px!important;
+        opacity: 1!important;
+        filter: alpha(opacity=100)!important
+    }
+    .sidebar.responsive-min .nav-searchthree .nav-search-input:active~#nav-search-icon,
+    .sidebar.responsive-min .nav-searchthree .nav-search-input:focus~#nav-search-icon,
+    .sidebar.responsive-min .nav-searchthree .nav-search-input:hover~#nav-search-icon {
+        border: none;
+        border-radius: 0;
+        padding: 0 3px!important
+    }
+    .sidebar.responsive-min .nav-searchthree:hover .nav-search-input~.nav-search-icon {
+        border: none;
+        border-radius: 0;
+        padding: 0 3px!important
+    }
+    .sidebar.responsive-min .nav-searchthree .nav-search-icon {
+        border: 1px solid;
+        border-radius: 32px;
+        background-color: #FFF;
+        padding: 0 5px!important
+    }
+}
+@media only screen and (max-width: 991px) {
+    .nav-searchthree {
+        right:120px
+    }
+    .nav-searchthree .nav-search-input {
+        width: 105px
+    }
+    .nav-searchthree .nav-search-btn:active+.nav-search-input,
+    .nav-searchthree .nav-search-input:active,
+    .nav-searchthree .nav-search-input:focus,
+    .nav-searchthree .nav-search-input:hover,
+    .nav-searchthree:hover .nav-search-input {
+        width: 145px
+    }
+}
+@media only screen and (max-width: 767px) {
+    .nav-searchthree .nav-search-input {
+        width: 0;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        max-width: 0
+    }
+    .nav-searchthree .nav-search-btn:active+.nav-search-input,
+    .nav-searchthree .nav-search-input:active,
+    .nav-searchthree .nav-search-input:focus,
+    .nav-searchthree .nav-search-input:hover,
+    .nav-searchthree:hover .nav-search-input {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        width: 152px;
+        max-width: 152px
+    }
+    .nav-searchthree .nav-search-icon {
+        border: 1px solid;
+        border-radius: 100%;
+        background-color: #FFF;
+        padding: 0 5px!important
+    }
+    .nav-searchthree .nav-search-input:active~.nav-search-icon,
+    .nav-searchthree .nav-search-input:focus~.nav-search-icon,
+    .nav-searchthree .nav-search-input:hover~.nav-search-icon,
+    .nav-searchthree:hover .nav-search-icon {
         border: none;
         border-radius: 0;
         padding: 0 3px!important
